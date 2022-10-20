@@ -4,7 +4,8 @@
 
 using System.Text;
 
-new Homework().Task_1();
+//new Homework().Task_8();
+new Homework_2().Task_1();
 
 class Homework
 {
@@ -124,4 +125,96 @@ class Homework
         sb.Append(line3);
         Console.WriteLine(sb.ToString());
     }
+
+    public void Task_8()
+    {
+        Console.WriteLine("write tf coior");
+        var i = 1;
+       while(i<= 10) 
+        {
+
+            Console.WriteLine(i);
+
+            i = i + 2;
+        }
+    }
+}
+
+
+
+
+
+
+class Homework_2
+{
+    public void Task_1()
+    {
+        Console.Write("enter a number:");
+        int number = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("enter a decimal with dot:");
+        double decimaL = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("enter a letter:");
+        char letter = Convert.ToChar(Console.ReadLine());
+
+        Console.Write("enter a boolean:");
+        bool boolean = Convert.ToBoolean(Console.ReadLine());
+
+
+        Console.WriteLine($"number={number}  decimal={decimaL} letter={letter} boolean={boolean}");
+    }
+
+    public void Task_2()
+    {
+
+
+    }
+
+    public void Task_3()
+    {
+
+
+    }
+
+    public void Task_4()
+    {
+
+
+    }
+
+    public void Task_5()
+    {
+
+
+    }
+
+    public void Task_6()
+    {
+
+
+    }
+
+    public void Task_7()
+    {
+
+
+    }
+
+    public void Task_8()
+    {
+
+
+    }
+
+    public void Task_9()
+    {
+
+
+    }
+
+
+
+
+
 }
