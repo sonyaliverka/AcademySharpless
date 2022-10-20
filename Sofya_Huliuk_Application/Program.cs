@@ -2,9 +2,11 @@
 //Console.ReadLine();
 
 
+using System;
 using System.Text;
 
-new Homework().Task_1();
+//new Homework().Task_1();
+new Homework_2().Task_6();
 
 class Homework
 {
@@ -124,4 +126,121 @@ class Homework
         sb.Append(line3);
         Console.WriteLine(sb.ToString());
     }
+}
+class Homework_2
+{
+    public void Task_1()
+    {
+        Console.Write("enter a number:");
+        int number = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("enter a decimal with dot:");
+        double decimaL = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("enter a letter:");
+        char letter = Convert.ToChar(Console.ReadLine());
+
+        Console.Write("enter a boolean:");
+        bool boolean = Convert.ToBoolean(Console.ReadLine());
+
+
+        Console.WriteLine($"number={number}  decimal={decimaL} letter={letter} boolean={boolean}");
+    }
+
+    public void Task_2()
+    {
+        Console.Write("enter a number:");
+        int number = int.Parse(Console.ReadLine());
+
+        Console.Write("enter a letter:");
+        char letter = char.Parse(Console.ReadLine());
+
+        Console.WriteLine($"number={number} letter={letter}");
+    }
+    public void Task_3()
+    {
+        Console.WriteLine("enter the number:");
+        string input = Console.ReadLine();
+
+        bool result = int.TryParse(input, out var number);
+        if (result == true)
+            Console.WriteLine($"the conversion was successful. number: {number}");
+        else
+            Console.WriteLine("conversion failed");
+    }
+
+    public void Task_4()
+    {
+        int num1 = 2;
+        int num2 = num1 + 3;  
+        int num3 = num2 + num1;
+
+        Console.WriteLine($"result: {num3}");
+    }
+
+    public void Task_5()
+    {
+        double fish = 12.0;
+        double milk = 8.0;
+        double salt = 4.0;
+        double soap = 5.0;
+        double lotion = 16.0;
+        double meat = 15.0;
+        double sum = fish + meat + milk + salt + soap + lotion;
+        double discount = 15.0;
+        double finalPrice = sum * (100 - discount) / 100;
+        Console.WriteLine($"сheck: {sum}");
+        Console.WriteLine($"discount check:{finalPrice}");
+    }
+
+    public void Task_6()
+    {
+        double a = 4;
+        double b = 5;
+
+        double result1 = ++a + b*2 ;
+        /* 1) ++a=5
+           2) b*2=5*2=10
+           3) 5+10=15
+        */
+        Console.WriteLine(result1);
+
+        int c = 6;
+        int l = 4;
+
+        int result2 = (--c * (++l + c)+ c) ;
+        /*
+         1) --c=t
+         2) ++l=5
+         3) l+c=5+5=10
+         4) --c*10=5*10=50
+         5) 50+5=55
+         */
+        Console.WriteLine(result2);
+    }
+
+    public void Task_7()
+    {
+        //я не поняла, доделаю 21.10 до 15.00
+
+    }
+
+    public void Task_8()
+    {
+        int num = 1;
+        object o = num;
+        num = (int)o;
+        int j = (int)o;   
+    }
+
+    public void Task_9()
+    {
+        //я не поняла, доделаю 21.10 до 15.00
+
+    }
+
+
+
+
+
 }
