@@ -6,7 +6,7 @@ using System;
 using System.Text;
 
 //new Homework().Task_1();
-new Homework_2().Task_7();
+new Homework_2().Task_5();
 
 class Homework
 {
@@ -180,17 +180,26 @@ class Homework_2
 
     public void Task_5()
     {
-        double fish = 12.0*1;
-        double milk = 8.0*1;
-        double salt = 4.0*1;
-        double soap = 5.0*1;
-        double lotion = 16.0*1;
-        double meat = 15.0*1;
+        double fish = 12.0;
+        double milk = 8.0;
+        double salt = 4.0;
+        double soap = 5.0;
+        double lotion = 16.0;
+        double meat = 15.0;
 
-        double sum = fish + meat + milk + salt + soap + lotion;
+        int fishCount = 15;
+        int milkCount = 1;
+        int saltCount = 5;
+        int soapCount = 2;
+        int lotionCount = 10;
+        int meatCount = 11;
+
+        double sum = fish * fishCount + meat * meatCount + milk * milkCount 
+            + salt * saltCount + soap * soapCount + lotion * lotionCount;
         double discount = 15.0;
         double finalPrice = sum * (100 - discount) / 100;
-        Console.WriteLine($"сheck: {sum}");
+
+        Console.WriteLine($"check: {sum}");
         Console.WriteLine($"discount check:{finalPrice}");
     }
 
