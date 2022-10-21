@@ -6,7 +6,7 @@ using System;
 using System.Text;
 
 //new Homework().Task_1();
-new Homework_2().Task_6();
+new Homework_2().Task_7();
 
 class Homework
 {
@@ -180,12 +180,13 @@ class Homework_2
 
     public void Task_5()
     {
-        double fish = 12.0;
-        double milk = 8.0;
-        double salt = 4.0;
-        double soap = 5.0;
-        double lotion = 16.0;
-        double meat = 15.0;
+        double fish = 12.0*1;
+        double milk = 8.0*1;
+        double salt = 4.0*1;
+        double soap = 5.0*1;
+        double lotion = 16.0*1;
+        double meat = 15.0*1;
+
         double sum = fish + meat + milk + salt + soap + lotion;
         double discount = 15.0;
         double finalPrice = sum * (100 - discount) / 100;
@@ -221,8 +222,49 @@ class Homework_2
 
     public void Task_7()
     {
-        //я не поняла, доделаю 21.10 до 15.00
+        //int a = 42;
+        //int b = 42;
+        //Console.WriteLine(a == b); // true
+        //Console.WriteLine(a > b); // false
 
+        //bool a = true;
+        //bool b = true;
+        //bool c = true;
+        //Console.WriteLine(a && b == c); // true
+        //Console.WriteLine(a && b != c); // false
+
+        //bool a = true;
+        //int b = 12;
+        //int c = 10;
+
+        //Console.WriteLine(a || b > c); // true
+        //Console.WriteLine(a && b < c); // false
+
+        //int a = 1;
+        //int b = 2;
+        //Console.WriteLine(a != b); // true
+        //Console.WriteLine(a == b); // false
+
+        //int a = 3;
+        //int b = 4;
+        //Console.WriteLine(a <= b); // true
+        //Console.WriteLine(a > b); // false
+
+        
+
+        //int a = 34;
+        //int c = 33;
+        //bool b = true;
+        //bool d = false;
+        //Console.WriteLine(a > c == b || d); // true
+        //Console.WriteLine(a > c == b && d); // false
+
+        //int a = 20;
+        //int c = 22;
+        //int b = 45;
+        //int d = 0;
+        //Console.WriteLine(a > c == b < d); // true
+        //Console.WriteLine(a > c == b > d); // false
     }
 
     public void Task_8()
@@ -235,8 +277,12 @@ class Homework_2
 
     public void Task_9()
     {
-        //я не поняла, доделаю 21.10 до 15.00
-
+        uint a = 15;
+        ulong b = 12;
+        // явное преобразование
+        ulong с = a;
+        // неявное преобразование
+        uint d = (uint)b;
     }
 
 
