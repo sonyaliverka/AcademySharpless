@@ -180,12 +180,13 @@ class Homework_2
 
     public void Task_5()
     {
-        double fish = 12.0;
-        double milk = 8.0;
-        double salt = 4.0;
-        double soap = 5.0;
-        double lotion = 16.0;
-        double meat = 15.0;
+        double fish = 12.0*1;
+        double milk = 8.0*1;
+        double salt = 4.0*1;
+        double soap = 5.0*1;
+        double lotion = 16.0*1;
+        double meat = 15.0*1;
+
         double sum = fish + meat + milk + salt + soap + lotion;
         double discount = 15.0;
         double finalPrice = sum * (100 - discount) / 100;
