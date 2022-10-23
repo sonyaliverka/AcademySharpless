@@ -6,7 +6,8 @@ using System;
 using System.Text;
 
 //new Homework().Task_1();
-new Homework_2().Task_5();
+//new Homework_2().Task_10();
+new Homework_3().Task_10();
 
 class Homework
 {
@@ -294,8 +295,43 @@ class Homework_2
         uint d = (uint)b;
     }
 
+    public void Task_10()
+    {
+       
+    }
 
+     
 
 
 
 }
+
+class Homework_3
+{
+    public void Task_1()
+    {
+        Console.Write("Enter the integer:");
+        int num = int.Parse(Console.ReadLine());
+
+        if (num ==  )
+        {
+            Console.Write("tutti");
+        }
+
+        if (num >  )
+        {
+            Console.Write("frutti");
+        }
+
+        if (num < )
+        {
+            Console.Write("tutti-frutti");
+        }
+    }
+    public void Task_10()
+    {
+
+    }
+
+}
+
