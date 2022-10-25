@@ -2,12 +2,11 @@
 //Console.ReadLine();
 
 
-using System;
 using System.Text;
 
 //new Homework().Task_1();
 //new Homework_2().Task_10();
-new Homework_3().Task_10();
+new Homework_3().Task_2();
 
 class Homework
 {
@@ -79,7 +78,7 @@ class Homework
         string secondPart = sentence.Substring(3);
 
         Console.WriteLine("Result:");
-        string lyrics = string.Join("", firstPart , secondPart);
+        string lyrics = string.Join("", firstPart, secondPart);
         Console.WriteLine(lyrics);
     }
 
@@ -102,7 +101,7 @@ class Homework
     {
         // бесконечное цукиеми(цикл) позволяет посмотреть на любые
         // буковки в верхнем регистре без перезапуска программы 
-        while (true)  
+        while (true)
         {
             string letter = Console.ReadLine();
 
@@ -112,7 +111,7 @@ class Homework
 
     public void Task_Additional()
     {
-       
+
         Console.WriteLine("enter free lines one by one");
         Console.Write("First line:");
         string line1 = Console.ReadLine();
@@ -122,7 +121,7 @@ class Homework
         string line3 = Console.ReadLine();
 
         StringBuilder sb = new StringBuilder();
-        sb.Append(line1); 
+        sb.Append(line1);
         sb.Append(line2);
         sb.Append(line3);
         Console.WriteLine(sb.ToString());
@@ -173,7 +172,7 @@ class Homework_2
     public void Task_4()
     {
         int num1 = 2;
-        int num2 = num1 + 3;  
+        int num2 = num1 + 3;
         int num3 = num2 + num1;
 
         Console.WriteLine($"result: {num3}");
@@ -195,7 +194,7 @@ class Homework_2
         int lotionCount = 10;
         int meatCount = 11;
 
-        double sum = fish * fishCount + meat * meatCount + milk * milkCount 
+        double sum = fish * fishCount + meat * meatCount + milk * milkCount
             + salt * saltCount + soap * soapCount + lotion * lotionCount;
         double discount = 15.0;
         double finalPrice = sum * (100 - discount) / 100;
@@ -209,7 +208,7 @@ class Homework_2
         double a = 4;
         double b = 5;
 
-        double result1 = ++a + b*2 ;
+        double result1 = ++a + b * 2;
         /* 1) ++a=5
            2) b*2=5*2=10
            3) 5+10=15
@@ -219,7 +218,7 @@ class Homework_2
         int c = 6;
         int l = 4;
 
-        int result2 = (--c * (++l + c)+ c) ;
+        int result2 = (--c * (++l + c) + c);
         /*
          1) --c=t
          2) ++l=5
@@ -260,7 +259,7 @@ class Homework_2
         //Console.WriteLine(a <= b); // true
         //Console.WriteLine(a > b); // false
 
-        
+
 
         //int a = 34;
         //int c = 33;
@@ -282,7 +281,7 @@ class Homework_2
         int num = 1;
         object o = num;
         num = (int)o;
-        int j = (int)o;   
+        int j = (int)o;
     }
 
     public void Task_9()
@@ -297,10 +296,10 @@ class Homework_2
 
     public void Task_10()
     {
-       
+
     }
 
-     
+
 
 
 
@@ -310,25 +309,42 @@ class Homework_3
 {
     public void Task_1()
     {
-        Console.Write("Enter the integer:");
-        int num = int.Parse(Console.ReadLine());
-
-        if (num ==  )
+        while (true)
         {
-            Console.Write("tutti");
+            Console.WriteLine("Enter the integer:");
+            string input = (Console.ReadLine());
+            bool result = int.TryParse(input, out var num);
+            if(!result )
+
+            {
+                Console.WriteLine("incorrect value, please try again");
+                continue; 
+            }
+
+            if (num % 10 == 0)
+            {
+                Console.WriteLine("tutti-frutti");
+
+                continue;
+            }
+
+            if (num % 2 == 0)
+            {
+                Console.WriteLine("tutti");
+
+                continue;
+            }
+
+            if (num % 5 == 0)
+            {
+                Console.WriteLine("frutti");
+
+                continue;
+            }
         }
 
-        if (num >  )
-        {
-            Console.Write("frutti");
-        }
-
-        if (num < )
-        {
-            Console.Write("tutti-frutti");
-        }
     }
-    public void Task_10()
+    public void Task_2()
     {
 
     }
