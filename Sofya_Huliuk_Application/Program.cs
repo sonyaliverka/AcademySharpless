@@ -6,7 +6,7 @@ using System.Text;
 
 //new Homework().Task_1();
 //new Homework_2().Task_10();
-new Homework_3().Task_2();
+new Homework_3().Task_3();
 
 class Homework
 {
@@ -312,13 +312,13 @@ class Homework_3
         while (true)
         {
             Console.WriteLine("Enter the integer:");
-            string input = (Console.ReadLine());
+            string input = Console.ReadLine();
             bool result = int.TryParse(input, out var num);
-            if(!result )
+            if (!result)
 
             {
                 Console.WriteLine("incorrect value, please try again");
-                continue; 
+                continue;
             }
 
             if (num % 10 == 0)
@@ -346,8 +346,109 @@ class Homework_3
     }
     public void Task_2()
     {
+        Console.WriteLine("Enter the first number:");
+        string input1 = Console.ReadLine();
+        bool result1 = int.TryParse(input1, out var firstNum);
+        if (!result1)
+        {
+            Console.WriteLine("incorrect value, please try again");
+        }
 
+        Console.WriteLine("enter the second number, it must be greater than the first:");
+        string input2 = Console.ReadLine();
+        bool result2 = int.TryParse(input2, out var secondNum);
+        if (!result2)
+        {
+            Console.WriteLine("incorrect value, please try again");
+        }
+        if (secondNum <= firstNum)
+        {
+            Console.WriteLine("the second number must be greater than the first, please try again");
+        }
+
+
+        for (int value = firstNum; value <= secondNum; value++)
+        {
+            if (value % 10 == 0)
+            {
+                Console.WriteLine("tutti-frutti");
+
+                continue;
+            }
+
+            if (value % 2 == 0)
+            {
+                Console.WriteLine("tutti");
+
+                continue;
+            }
+
+            if (value % 5 == 0)
+            {
+                Console.WriteLine("frutti");
+
+                continue;
+            }
+
+            Console.WriteLine($"Number {value} can’t be divided on 2 or 5");
+        }
     }
 
+    public void Task_3()
+    {
+        Console.WriteLine("Enter the first number:");
+        string input1 = Console.ReadLine();
+        bool result1 = int.TryParse(input1, out var firstNum);
+        if (!result1)
+        {
+            Console.WriteLine("incorrect value, please try again");
+        }
+
+        Console.WriteLine("enter the second number, it must be greater than the first:");
+        string input2 = Console.ReadLine();
+        bool result2 = int.TryParse(input2, out var secondNum);
+        if (!result2)
+        {
+            Console.WriteLine("incorrect value, please try again");
+        }
+        if (secondNum <= firstNum) // 5&66
+
+        {
+            int intermediate = firstNum; // i=66
+            firstNum = secondNum; // 5=5 
+            secondNum = intermediate; // 66
+        }
+
+
+        for (int value = firstNum; value <= secondNum; value++)
+        {
+            if (value % 10 == 0)
+            {
+                Console.WriteLine("tutti-frutti");
+
+                continue;
+            }
+
+            if (value % 2 == 0)
+            {
+                Console.WriteLine("tutti");
+
+                continue;
+            }
+
+            if (value % 5 == 0)
+            {
+                Console.WriteLine("frutti");
+
+                continue;
+            }
+
+            Console.WriteLine($"Number {value} can’t be divided on 2 or 5");
+        }
+
+    }
 }
+
+
+
 
