@@ -318,28 +318,21 @@ class Homework_3
 
             {
                 Console.WriteLine("incorrect value, please try again");
-                continue;
             }
 
-            if (num % 10 == 0)
+            else if (num % 10 == 0)
             {
                 Console.WriteLine("tutti-frutti");
-
-                continue;
             }
 
-            if (num % 2 == 0)
+            else if (num % 2 == 0)
             {
                 Console.WriteLine("tutti");
-
-                continue;
             }
 
-            if (num % 5 == 0)
+            else if (num % 5 == 0)
             {
                 Console.WriteLine("frutti");
-
-                continue;
             }
         }
 
@@ -347,17 +340,17 @@ class Homework_3
     public void Task_2()
     {
         Console.WriteLine("Enter the first number:");
-        string input1 = Console.ReadLine();
-        bool result1 = int.TryParse(input1, out var firstNum);
-        if (!result1)
+        string inputFirst = Console.ReadLine();
+        bool resultFirst = int.TryParse(inputFirst, out var firstNum);
+        if (!resultFirst)
         {
             Console.WriteLine("incorrect value, please try again");
         }
 
         Console.WriteLine("enter the second number, it must be greater than the first:");
-        string input2 = Console.ReadLine();
-        bool result2 = int.TryParse(input2, out var secondNum);
-        if (!result2)
+        string inputSecond = Console.ReadLine();
+        bool resultSecond = int.TryParse(inputSecond, out var secondNum);
+        if (!resultSecond)
         {
             Console.WriteLine("incorrect value, please try again");
         }
@@ -371,23 +364,17 @@ class Homework_3
         {
             if (value % 10 == 0)
             {
-                Console.WriteLine("tutti-frutti");
-
-                continue;
+                Console.WriteLine("tutti-frutti"); 
             }
 
             if (value % 2 == 0)
             {
-                Console.WriteLine("tutti");
-
-                continue;
+                Console.WriteLine("tutti"); 
             }
 
             if (value % 5 == 0)
             {
-                Console.WriteLine("frutti");
-
-                continue;
+                Console.WriteLine("frutti"); 
             }
 
             Console.WriteLine($"Number {value} can’t be divided on 2 or 5");
@@ -397,17 +384,17 @@ class Homework_3
     public void Task_3()
     {
         Console.WriteLine("Enter the first number:");
-        string input1 = Console.ReadLine();
-        bool result1 = int.TryParse(input1, out var firstNum);
-        if (!result1)
+        string inputFirst = Console.ReadLine();
+        bool resultFirst = int.TryParse(inputFirst, out var firstNum);
+        if (!resultFirst)
         {
             Console.WriteLine("incorrect value, please try again");
         }
 
         Console.WriteLine("enter the second number, it must be greater than the first:");
-        string input2 = Console.ReadLine();
-        bool result2 = int.TryParse(input2, out var secondNum);
-        if (!result2)
+        string inputSecond = Console.ReadLine();
+        bool resultSecond = int.TryParse(inputSecond, out var secondNum);
+        if (!resultSecond)
         {
             Console.WriteLine("incorrect value, please try again");
         }
@@ -424,23 +411,17 @@ class Homework_3
         {
             if (value % 10 == 0)
             {
-                Console.WriteLine("tutti-frutti");
-
-                continue;
+                Console.WriteLine("tutti-frutti"); 
             }
 
-            if (value % 2 == 0)
+           else if (value % 2 == 0)
             {
-                Console.WriteLine("tutti");
-
-                continue;
+                Console.WriteLine("tutti"); 
             }
 
-            if (value % 5 == 0)
+            else if (value % 5 == 0)
             {
-                Console.WriteLine("frutti");
-
-                continue;
+                Console.WriteLine("frutti"); 
             }
 
             Console.WriteLine($"Number {value} can’t be divided on 2 or 5");
