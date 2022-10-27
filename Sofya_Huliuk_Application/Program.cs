@@ -354,7 +354,7 @@ class Homework_3
         {
             Console.WriteLine("incorrect value, please try again");
         }
-        if (secondNum <= firstNum)
+        else if (secondNum <= firstNum)
         {
             Console.WriteLine("the second number must be greater than the first, please try again");
         }
@@ -367,12 +367,12 @@ class Homework_3
                 Console.WriteLine("tutti-frutti"); 
             }
 
-            if (value % 2 == 0)
+            else if (value % 2 == 0)
             {
                 Console.WriteLine("tutti"); 
             }
 
-            if (value % 5 == 0)
+            else if (value % 5 == 0)
             {
                 Console.WriteLine("frutti"); 
             }
@@ -398,7 +398,7 @@ class Homework_3
         {
             Console.WriteLine("incorrect value, please try again");
         }
-        if (secondNum <= firstNum) // 5&66
+        else if (secondNum <= firstNum) // 5&66
 
         {
             int intermediate = firstNum; // i=66
