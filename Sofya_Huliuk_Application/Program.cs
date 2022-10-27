@@ -377,7 +377,10 @@ class Homework_3
                 Console.WriteLine("frutti");
             }
 
-            Console.WriteLine($"Number {value} can’t be divided on 2 or 5");
+            else
+            {
+                Console.WriteLine($"Number {value} can’t be divided on 2 or 5");
+            }
         }
     }
 
