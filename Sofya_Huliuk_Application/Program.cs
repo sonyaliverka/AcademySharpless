@@ -4,7 +4,9 @@
 
 using System.Text;
 
-new Homework().Task_1();
+//new Homework().Task_1();
+new Additional().Task_1();
+ 
 
 class Homework
 {
@@ -76,7 +78,7 @@ class Homework
         string secondPart = sentence.Substring(3);
 
         Console.WriteLine("Result:");
-        string lyrics = string.Join("", firstPart , secondPart);
+        string lyrics = string.Join("", firstPart, secondPart);
         Console.WriteLine(lyrics);
     }
 
@@ -99,7 +101,7 @@ class Homework
     {
         // бесконечное цукиеми(цикл) позволяет посмотреть на любые
         // буковки в верхнем регистре без перезапуска программы 
-        while (true)  
+        while (true)
         {
             string letter = Console.ReadLine();
 
@@ -109,7 +111,7 @@ class Homework
 
     public void Task_Additional()
     {
-       
+
         Console.WriteLine("enter free lines one by one");
         Console.Write("First line:");
         string line1 = Console.ReadLine();
@@ -119,9 +121,59 @@ class Homework
         string line3 = Console.ReadLine();
 
         StringBuilder sb = new StringBuilder();
-        sb.Append(line1); 
+        sb.Append(line1);
         sb.Append(line2);
         sb.Append(line3);
         Console.WriteLine(sb.ToString());
     }
 }
+class Additional
+{
+    public void Task_1()
+    {
+        while (true)
+        {
+            Console.WriteLine("Enter the bool:");
+            string input1 = (Console.ReadLine());
+            bool result1 = bool.TryParse(input1, out var boolian1);
+            if (!result1)
+
+            {
+                Console.WriteLine("incorrect value, please try again");
+                continue;
+            }
+
+            Console.WriteLine("Enter the another bool:");
+            string input2 = (Console.ReadLine());
+            bool result2 = bool.TryParse(input2, out var boolian2); 
+            if (!result2)
+            {
+                Console.WriteLine("incorrect value, please try again");
+                continue;
+            }
+
+            if (boolian1 || boolian2)
+            {
+                Console.WriteLine($"logical comparison operation with ||: success");
+            }
+            else 
+            {
+                Console.WriteLine($"logical comparison operation with ||: failure");
+                
+
+            }
+            if (boolian1 && boolian2)
+            {
+                Console.WriteLine($"logical comparison operation with &&: success");
+
+            }
+            else
+            {
+                Console.WriteLine($"logical comparison operation with &&: failure");
+
+            }
+
+        }
+    }
+}
+ 
