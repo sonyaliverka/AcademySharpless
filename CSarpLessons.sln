@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sofya_Huliuk_Application", "Sofya_Huliuk_Application\Sofya_Huliuk_Application.csproj", "{B494ECCF-76D1-4809-BA32-3BB8413D2752}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpBasics", "Sofya_Huliuk_Application\CSharpBasics.csproj", "{B494ECCF-76D1-4809-BA32-3BB8413D2752}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpOOP", "CSharpOOP\CSharpOOP.csproj", "{D3147EBC-3001-4D3E-8A53-E1D940F7FBAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{B494ECCF-76D1-4809-BA32-3BB8413D2752}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B494ECCF-76D1-4809-BA32-3BB8413D2752}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B494ECCF-76D1-4809-BA32-3BB8413D2752}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3147EBC-3001-4D3E-8A53-E1D940F7FBAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3147EBC-3001-4D3E-8A53-E1D940F7FBAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3147EBC-3001-4D3E-8A53-E1D940F7FBAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3147EBC-3001-4D3E-8A53-E1D940F7FBAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
