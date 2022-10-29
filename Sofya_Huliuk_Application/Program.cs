@@ -1,12 +1,17 @@
-﻿//Console.WriteLine("Hello, World!");
+//Console.WriteLine("Hello, World!");
 //Console.ReadLine();
 
 
+using System;
 using System.Text;
 
 //new Homework().Task_1();
+
 new Additional().Task_1();
  
+
+new Homework_2().Task_5();
+
 
 class Homework
 {
@@ -127,6 +132,7 @@ class Homework
         Console.WriteLine(sb.ToString());
     }
 }
+
 class Additional
 {
     public void Task_1()
@@ -177,3 +183,177 @@ class Additional
     }
 }
  
+
+class Homework_2
+{
+    public void Task_1()
+    {
+        Console.Write("enter a number:");
+        int number = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("enter a decimal with dot:");
+        double decimaL = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("enter a letter:");
+        char letter = Convert.ToChar(Console.ReadLine());
+
+        Console.Write("enter a boolean:");
+        bool boolean = Convert.ToBoolean(Console.ReadLine());
+
+
+        Console.WriteLine($"number={number}  decimal={decimaL} letter={letter} boolean={boolean}");
+    }
+
+    public void Task_2()
+    {
+        Console.Write("enter a number:");
+        int number = int.Parse(Console.ReadLine());
+
+        Console.Write("enter a letter:");
+        char letter = char.Parse(Console.ReadLine());
+
+        Console.WriteLine($"number={number} letter={letter}");
+    }
+    public void Task_3()
+    {
+        Console.WriteLine("enter the number:");
+        string input = Console.ReadLine();
+
+        bool result = int.TryParse(input, out var number);
+        if (result == true)
+            Console.WriteLine($"the conversion was successful. number: {number}");
+        else
+            Console.WriteLine("conversion failed");
+    }
+
+    public void Task_4()
+    {
+        int num1 = 2;
+        int num2 = num1 + 3;  
+        int num3 = num2 + num1;
+
+        Console.WriteLine($"result: {num3}");
+    }
+
+    public void Task_5()
+    {
+        double fish = 12.0;
+        double milk = 8.0;
+        double salt = 4.0;
+        double soap = 5.0;
+        double lotion = 16.0;
+        double meat = 15.0;
+
+        int fishCount = 15;
+        int milkCount = 1;
+        int saltCount = 5;
+        int soapCount = 2;
+        int lotionCount = 10;
+        int meatCount = 11;
+
+        double sum = fish * fishCount + meat * meatCount + milk * milkCount 
+            + salt * saltCount + soap * soapCount + lotion * lotionCount;
+        double discount = 15.0;
+        double finalPrice = sum * (100 - discount) / 100;
+
+        Console.WriteLine($"check: {sum}");
+        Console.WriteLine($"discount check:{finalPrice}");
+    }
+
+    public void Task_6()
+    {
+        double a = 4;
+        double b = 5;
+
+        double result1 = ++a + b*2 ;
+        /* 1) ++a=5
+           2) b*2=5*2=10
+           3) 5+10=15
+        */
+        Console.WriteLine(result1);
+
+        int c = 6;
+        int l = 4;
+
+        int result2 = (--c * (++l + c)+ c) ;
+        /*
+         1) --c=t
+         2) ++l=5
+         3) l+c=5+5=10
+         4) --c*10=5*10=50
+         5) 50+5=55
+         */
+        Console.WriteLine(result2);
+    }
+
+    public void Task_7()
+    {
+        //int a = 42;
+        //int b = 42;
+        //Console.WriteLine(a == b); // true
+        //Console.WriteLine(a > b); // false
+
+        //bool a = true;
+        //bool b = true;
+        //bool c = true;
+        //Console.WriteLine(a && b == c); // true
+        //Console.WriteLine(a && b != c); // false
+
+        //bool a = true;
+        //int b = 12;
+        //int c = 10;
+
+        //Console.WriteLine(a || b > c); // true
+        //Console.WriteLine(a && b < c); // false
+
+        //int a = 1;
+        //int b = 2;
+        //Console.WriteLine(a != b); // true
+        //Console.WriteLine(a == b); // false
+
+        //int a = 3;
+        //int b = 4;
+        //Console.WriteLine(a <= b); // true
+        //Console.WriteLine(a > b); // false
+
+        
+
+        //int a = 34;
+        //int c = 33;
+        //bool b = true;
+        //bool d = false;
+        //Console.WriteLine(a > c == b || d); // true
+        //Console.WriteLine(a > c == b && d); // false
+
+        //int a = 20;
+        //int c = 22;
+        //int b = 45;
+        //int d = 0;
+        //Console.WriteLine(a > c == b < d); // true
+        //Console.WriteLine(a > c == b > d); // false
+    }
+
+    public void Task_8()
+    {
+        int num = 1;
+        object o = num;
+        num = (int)o;
+        int j = (int)o;   
+    }
+
+    public void Task_9()
+    {
+        uint a = 15;
+        ulong b = 12;
+        // явное преобразование
+        ulong с = a;
+        // неявное преобразование
+        uint d = (uint)b;
+    }
+
+
+
+
+
+}
+
