@@ -1,12 +1,17 @@
-﻿//Console.WriteLine("Hello, World!");
+//Console.WriteLine("Hello, World!");
 //Console.ReadLine();
 
 
 using System.Text;
 
 //new Homework().Task_1();
+
 //new Homework_2().Task_10();
 new Homework_3().Task_3();
+new Additional().Task_1();
+new Homework_2().Task_5();
+
+
 
 class Homework
 {
@@ -127,6 +132,58 @@ class Homework
         Console.WriteLine(sb.ToString());
     }
 }
+
+class Additional
+{
+    public void Task_1()
+    {
+        while (true)
+        {
+            Console.WriteLine("Enter the bool:");
+            string input1 = (Console.ReadLine());
+            bool result1 = bool.TryParse(input1, out var boolian1);
+            if (!result1)
+
+            {
+                Console.WriteLine("incorrect value, please try again");
+                continue;
+            }
+
+            Console.WriteLine("Enter the another bool:");
+            string input2 = (Console.ReadLine());
+            bool result2 = bool.TryParse(input2, out var boolian2); 
+            if (!result2)
+            {
+                Console.WriteLine("incorrect value, please try again");
+                continue;
+            }
+
+            if (boolian1 || boolian2)
+            {
+                Console.WriteLine($"logical comparison operation with ||: success");
+            }
+            else 
+            {
+                Console.WriteLine($"logical comparison operation with ||: failure");
+                
+
+            }
+            if (boolian1 && boolian2)
+            {
+                Console.WriteLine($"logical comparison operation with &&: success");
+
+            }
+            else
+            {
+                Console.WriteLine($"logical comparison operation with &&: failure");
+
+            }
+
+        }
+    }
+}
+ 
+
 class Homework_2
 {
     public void Task_1()
