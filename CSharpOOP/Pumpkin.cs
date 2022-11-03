@@ -28,8 +28,6 @@ namespace CSharpOOP
             {
                 Console.WriteLine("Good");
             }
-
         }
     }
-
 }

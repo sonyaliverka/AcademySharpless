@@ -1,15 +1,13 @@
 
-
-
 using CSharpOOP;
 
 Pumpkin pumpkin = new Pumpkin();
 pumpkin.Nane = "Jane Doe";
-//pumpkin.Age = 22;
+pumpkin.Age = 22;
 pumpkin.Color = "Blue";
 pumpkin.HasTail = true;
 
-pumpkin.CheackAge();
+pumpkin.CheckAge();
 
 #region Task_1
 //Console.WriteLine("Enter the quantity, price and personal discount");
