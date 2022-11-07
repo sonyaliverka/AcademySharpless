@@ -1,7 +1,21 @@
 ﻿#region Task_1
 Shape ball = new Ball(name: "Ball", radius: 9);
-Shape pyramid = new Pyramid(name: "Pyramid", height: 7, square: 29);
+
+ball.Volume();
+ball.PrintName();
+ball.PrintVolume();
+
+Shape pyramid = new Pyramid(name: "Pyramid", height: 15, square: 55);
+
+pyramid.Volume();
+pyramid.PrintName();
+pyramid.PrintVolume();
+
 Shape cylinder = new Cylinder(name: "Cylinder", radius: 6, height: 8);
+
+cylinder.Volume();
+cylinder.PrintName();
+cylinder.PrintVolume();
 
 
 abstract class Shape
@@ -14,9 +28,13 @@ abstract class Shape
         Name = name;
     }
 
-    public virtual void Print()
+    public virtual void PrintName()
     {
         Console.WriteLine($"Name: {Name}");
+    }
+    public virtual void PrintVolume()
+    {
+        Console.WriteLine($"Volume is {Volume()}");
     }
 }
 
@@ -30,7 +48,8 @@ class Ball : Shape
     }
     public override double Volume()
     {
-        return 4 / 3 * Math.PI * Math.Pow(Radius, 3);
+        double volume = ((4.0 / 3) * Math.PI) * Math.Pow(Radius, 3);
+        return volume;
     }
 }
 
@@ -46,7 +65,8 @@ class Pyramid : Shape
     }
     public override double Volume()
     {
-        return 1 / 3 * Square * Height;
+        double volume = ((1.0 / 3) * Square) * Height;
+        return volume;
     }
 }
 
@@ -62,7 +82,8 @@ class Cylinder : Shape
     }
     public override double Volume()
     {
-        return Math.PI * Math.Pow(Radius, 2) * Height;
+        double volume = Math.PI * Math.Pow(Radius, 2) * Height;
+        return volume;
     }
 }
 
