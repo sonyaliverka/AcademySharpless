@@ -6,6 +6,11 @@
     <Nullable>enable</Nullable>
 
     <IsPackable>false</IsPackable>
+
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+
+    <AssemblyVersion></AssemblyVersion>
+	<GeneratedAssemblyInfoFile>assemblyinfo.cs</GeneratedAssemblyInfoFile>
   </PropertyGroup>
 
   <ItemGroup>

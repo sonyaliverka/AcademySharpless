@@ -2,6 +2,8 @@
 
 namespace NUnitTestHomework
 {
+    [TestFixture]
+    [Parallelizable]
     internal class SqrtTests
     {
         private Calculator _calculator;

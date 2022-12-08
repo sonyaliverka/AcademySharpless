@@ -2,8 +2,8 @@ using CSharpCalculator;
 
 namespace NUnitTestHomework
 {
-
     [TestFixture]
+    [Parallelizable]
     public class PowTests
     {
         private Calculator _calculator;

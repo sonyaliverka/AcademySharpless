@@ -2,6 +2,8 @@
 
 namespace NUnitTestHomework
 {
+    [TestFixture]
+    [Parallelizable]
     internal class AbsTests
     {
         private Calculator _calculator;
