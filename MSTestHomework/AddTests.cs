@@ -56,7 +56,7 @@ namespace MSTestHomework
 
         // Проверка на баг с интом (успешно)
         [TestMethod]
-        public void Add_IntBug()
+        public void Add_IntegerArguments_ValidResult()
         {
             // Arrange
             int a = 5;

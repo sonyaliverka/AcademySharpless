@@ -61,7 +61,7 @@ namespace MSTestHomework
 
         // Проверка на баг с интом (провалено, инт работает)
         [TestMethod]
-        public void Divide_IntBug()
+        public void Divide_IntegerArguments_ValidResult()
         {
             // Arrange
             int a = 10;

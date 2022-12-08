@@ -27,7 +27,7 @@ namespace MSTestHomework
 
         // Проверка на баг с интом (провалено, инт работает)
         [TestMethod]
-        public void Multiply_IntBug()
+        public void Multiply_IntegerArguments_ValidResult()
         {
             // Arrange
             int a = 5;

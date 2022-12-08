@@ -47,7 +47,7 @@ namespace MSTestHomework
 
         // Проверка на баг с интом (провалено, инт работает)
         [TestMethod]
-        public void Sub_IntBug()
+        public void Sub_IntegerArguments_ValidResult()
         {
             // Arrange
             int a = 12;
