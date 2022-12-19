@@ -154,3 +154,8 @@ namespace Selenium_Basics2
         }
     }
 }
+
+// 1. https://www.epam.com/ //span[contains(text(),'CONTACT')]//parent::a      ("Keyword contains and axis parent)
+// li[@class='top-navigation__item epam']/following-sibling::li
+
+// li[@class='hamburger-menu__item item--child'][last()]
