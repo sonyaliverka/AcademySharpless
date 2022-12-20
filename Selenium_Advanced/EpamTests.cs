@@ -7,7 +7,7 @@ using OpenQA.Selenium.Support.UI;
 
 namespace Selenium_Advanced
 {
-    public class EpumTests
+    public class EpamTests
     {
         private IWebDriver _chrome;
 
